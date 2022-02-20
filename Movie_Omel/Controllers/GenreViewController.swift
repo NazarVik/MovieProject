@@ -23,7 +23,8 @@ class GenreViewController: UIViewController {
 extension GenreViewController: UICollectionViewDataSource, UICollectionViewDelegate {
 
         func collectionView(_ collectiomView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return 8
+            return 10
+            
         }
     
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
