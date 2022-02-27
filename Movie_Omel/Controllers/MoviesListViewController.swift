@@ -31,6 +31,8 @@ class MoviesListViewController: UIViewController {
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! MovieTableViewCell
             cell.myImage.image = UIImage(named: "Comedy")
+            cell.layer.borderWidth = 10.0
+            cell.layer.borderColor = UIColor.separator.cgColor
             return cell
         }
     }
