@@ -486,13 +486,22 @@
                     <view key="view" contentMode="scaleToFill" id="R6j-qL-xAn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDg-fj-7z5">
+                                <rect key="frame" x="131" y="143" width="153" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ZWu-ca-IDh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="V2V-jX-9Sb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kb8-Ph-EuX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3842" y="38"/>
+            <point key="canvasLocation" x="3840.579710144928" y="37.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0Xx-VI-lr0">
