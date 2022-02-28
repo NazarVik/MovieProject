@@ -9,7 +9,8 @@ import UIKit
 
 class MovieTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var myImage: UIImageView!
+  
+    @IBOutlet weak var backView: UIView!
     
     
     override func awakeFromNib() {
