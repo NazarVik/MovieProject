@@ -31,13 +31,15 @@ class MoviesListViewController: UIViewController {
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! MovieTableViewCell
             cell.backView.layer.cornerRadius = 10
+           
+            
             
            
-            cell.backView.layer.borderWidth = 5.0
-            cell.backView.layer.borderColor = UIColor.separator.cgColor
+//            cell.backView.layer.borderWidth = 5.0
+//            cell.backView.layer.borderColor = UIColor.separator.cgColor
 //            cell.layer.borderWidth = 15.0
 //            cell.layer.borderColor = UIColor.separator.cgColor
-//            cell.backView.backgroundColor = .clear
+            
             
             return cell
         }
