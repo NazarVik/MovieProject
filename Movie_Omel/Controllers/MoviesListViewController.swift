@@ -32,19 +32,16 @@ class MoviesListViewController: UIViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! MovieTableViewCell
             cell.backView.layer.cornerRadius = 10
            
-            
-            
-           
-//            cell.backView.layer.borderWidth = 5.0
-//            cell.backView.layer.borderColor = UIColor.separator.cgColor
-//            cell.layer.borderWidth = 15.0
-//            cell.layer.borderColor = UIColor.separator.cgColor
-            
-            
             return cell
         }
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
             return 150
+        }
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            print("discription")
+            let vc = storyboard?.instantiateViewController(withIdentifier: "discription")
+            self.navigationController?.pushViewController(vc!, animated: true)
+           
         }
         
     }
