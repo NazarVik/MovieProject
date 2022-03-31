@@ -10,6 +10,7 @@ import UIKit
 class GenreViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    var genresArray = MockGenreModel().configureGenreModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +24,13 @@ class GenreViewController: UIViewController {
 extension GenreViewController: UICollectionViewDataSource, UICollectionViewDelegate {
 
         func collectionView(_ collectiomView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return 10
+            return genresArray.genres.count
             
         }
     
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! GengeCollectionViewCell
-            cell.imageCell.image = UIImage(named: "Crime")
+            cell.configure(by: genresArray.genres[indexPath.item])
         
             return cell
         
