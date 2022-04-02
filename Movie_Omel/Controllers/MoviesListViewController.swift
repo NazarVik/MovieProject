@@ -30,7 +30,7 @@ class MoviesListViewController: UIViewController {
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! MovieTableViewCell
-            cell.backView.layer.cornerRadius = 10
+//            cell.backView.layer.cornerRadius = 10
            
             return cell
         }

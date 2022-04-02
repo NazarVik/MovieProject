@@ -347,11 +347,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6j5-4j-Ssg">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sh" translatesAutoresizingMaskIntoConstraints="NO" id="6j5-4j-Ssg">
                                                     <rect key="frame" x="30" y="30" width="68" height="71"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEa-un-U7D">
                                                     <rect key="frame" x="10" y="106" width="108" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="sjk-1C-arz"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -618,7 +621,7 @@
                                                     <constraint firstItem="828-kh-B6f" firstAttribute="top" secondItem="hHc-cG-tGo" secondAttribute="top" constant="10" id="qEY-L6-dcT"/>
                                                     <constraint firstItem="CBA-LH-qgM" firstAttribute="top" secondItem="SRR-Nq-5Xf" secondAttribute="bottom" constant="20" id="qc2-Qx-IJy"/>
                                                     <constraint firstItem="Yho-B1-y2b" firstAttribute="top" secondItem="hHc-cG-tGo" secondAttribute="top" constant="75" id="r49-NX-uDZ"/>
-                                                    <constraint firstAttribute="trailing" secondItem="828-kh-B6f" secondAttribute="trailing" constant="142" id="r90-Y1-A1s"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="828-kh-B6f" secondAttribute="trailing" constant="20" symbolic="YES" id="r90-Y1-A1s"/>
                                                     <constraint firstItem="N4n-lo-xgb" firstAttribute="leading" secondItem="hHc-cG-tGo" secondAttribute="leading" constant="10" id="rGS-Xh-soq"/>
                                                     <constraint firstItem="828-kh-B6f" firstAttribute="leading" secondItem="hHc-cG-tGo" secondAttribute="leading" constant="142" id="rbf-EQ-uPD"/>
                                                     <constraint firstAttribute="height" constant="342" id="tC6-rx-OFM"/>
@@ -686,7 +689,7 @@
                         <outlet property="posterPath" destination="Yho-B1-y2b" id="7le-JP-AKa"/>
                         <outlet property="status" destination="XmL-FF-QPr" id="exd-BZ-1Gp"/>
                         <outlet property="tagline" destination="SRR-Nq-5Xf" id="4gg-Tf-DDO"/>
-                        <outlet property="title" destination="828-kh-B6f" id="2hC-WD-IEw"/>
+                        <outlet property="titleDiscription" destination="828-kh-B6f" id="Xge-Ym-vwq"/>
                         <outlet property="voteAverage" destination="N4n-lo-xgb" id="O0d-g9-J6Q"/>
                     </connections>
                 </viewController>
@@ -723,6 +726,7 @@
         <image name="flagUSA" width="512" height="512"/>
         <image name="radio off" width="24" height="24"/>
         <image name="radio on" width="24" height="24"/>
+        <image name="sh" width="128" height="128"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

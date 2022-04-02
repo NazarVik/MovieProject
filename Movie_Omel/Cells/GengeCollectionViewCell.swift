@@ -14,7 +14,7 @@ class GengeCollectionViewCell: UICollectionViewCell {
     
     func configure(by model: Genres){
         textLabel.text = model.name.uppercased()
-        genreImageView.image = UIImage(named: "Shape_2")
+        genreImageView.image = UIImage(named: "Shape")
     }
     
     
