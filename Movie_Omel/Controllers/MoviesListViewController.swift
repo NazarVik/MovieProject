@@ -9,6 +9,8 @@ import UIKit
 
 class MoviesListViewController: UIViewController {
     
+    var moviesModelArray = MockMoviesModel().configureMovieModel()
+    
     @IBOutlet weak var tableView: UITableView!
     let identifier = "TableCell"
     
@@ -25,12 +27,13 @@ class MoviesListViewController: UIViewController {
     extension MoviesListViewController: UITableViewDelegate, UITableViewDataSource {
         
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 20
+            return moviesModelArray.item.count
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! MovieTableViewCell
 //            cell.backView.layer.cornerRadius = 10
+            cell.configure(by: moviesModelArray.item[indexPath.item])
            
             return cell
         }

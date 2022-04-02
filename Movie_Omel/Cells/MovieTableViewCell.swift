@@ -23,8 +23,12 @@ class MovieTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+    
         // Initialization code
+        
     }
+        
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -32,4 +36,11 @@ class MovieTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+func configure(by model: MovieItemModel){
+    posterPath.image = UIImage(named: "FlashImage")
+    originalTitle.text = model.originalTitle.uppercased()
+    overView.text = model.overview.uppercased()
+    
+    
+}
 }

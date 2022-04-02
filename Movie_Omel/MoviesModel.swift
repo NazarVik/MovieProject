@@ -24,10 +24,12 @@ struct MovieItemModel {
 class MockMoviesModel {
     var mockMoviesModel = MoviesModel(id: nil, item: [])
     func configureMovieModel() -> MoviesModel {
-        mockMoviesModel.item.append(MovieItemModel(id: 0, originalTitle: "0", overview: "0", voteAverage: 0, posterPath: "0"))
-        mockMoviesModel.item.append(MovieItemModel(id: 1, originalTitle: "1", overview: "1", voteAverage: 1, posterPath: "1"))
-        mockMoviesModel.item.append(MovieItemModel(id: 2, originalTitle: "2", overview: "2", voteAverage: 2, posterPath: "2"))
-        mockMoviesModel.item.append(MovieItemModel(id: 3, originalTitle: "3", overview: "3", voteAverage: 3, posterPath: "3"))
+        mockMoviesModel.item.append(MovieItemModel(id: 0, originalTitle: "0", overview: "Discription0", voteAverage: 0, posterPath: "0"))
+        mockMoviesModel.item.append(MovieItemModel(id: 1, originalTitle: "1", overview: "Discription1", voteAverage: 1, posterPath: "1"))
+        mockMoviesModel.item.append(MovieItemModel(id: 2, originalTitle: "2", overview: "Discription2", voteAverage: 2, posterPath: "2"))
+        mockMoviesModel.item.append(MovieItemModel(id: 3, originalTitle: "3", overview: "Discription3", voteAverage: 3, posterPath: "3"))
+        mockMoviesModel.item.append(MovieItemModel(id: 4, originalTitle: "4", overview: "Discription4", voteAverage: 4, posterPath: "4"))
+        mockMoviesModel.item.append(MovieItemModel(id: 5, originalTitle: "5", overview: "Discription5", voteAverage: 5, posterPath: "5"))
         
         return mockMoviesModel
     }
