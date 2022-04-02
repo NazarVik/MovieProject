@@ -21,6 +21,7 @@
 		849852462795960400A4A761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849852442795960400A4A761 /* LaunchScreen.storyboard */; };
 		849852562797508C00A4A761 /* GengeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849852552797508C00A4A761 /* GengeCollectionViewCell.swift */; };
 		8498525B2797607400A4A761 /* MoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498525A2797607400A4A761 /* MoviesListViewController.swift */; };
+		F02A64DD27F89BF200FA8009 /* Remarks in Resources */ = {isa = PBXBuildFile; fileRef = F02A64DC27F89BF200FA8009 /* Remarks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		849852472795960400A4A761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		849852552797508C00A4A761 /* GengeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GengeCollectionViewCell.swift; sourceTree = "<group>"; };
 		8498525A2797607400A4A761 /* MoviesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewController.swift; sourceTree = "<group>"; };
+		F02A64DC27F89BF200FA8009 /* Remarks */ = {isa = PBXFileReference; lastKnownFileType = text; path = Remarks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		8498522D279595FF00A4A761 = {
 			isa = PBXGroup;
 			children = (
+				F02A64DC27F89BF200FA8009 /* Remarks */,
 				84985238279595FF00A4A761 /* Movie_Omel */,
 				84985237279595FF00A4A761 /* Products */,
 			);
@@ -181,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F02A64DD27F89BF200FA8009 /* Remarks in Resources */,
 				849852462795960400A4A761 /* LaunchScreen.storyboard in Resources */,
 				849852432795960400A4A761 /* Assets.xcassets in Resources */,
 				84985241279595FF00A4A761 /* Main.storyboard in Resources */,
