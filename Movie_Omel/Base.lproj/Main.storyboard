@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Movie_Omel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="StartViewController" customModule="Movie_Omel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -347,7 +347,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sh" translatesAutoresizingMaskIntoConstraints="NO" id="6j5-4j-Ssg">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shape" translatesAutoresizingMaskIntoConstraints="NO" id="6j5-4j-Ssg">
                                                     <rect key="frame" x="30" y="30" width="68" height="71"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEa-un-U7D">
@@ -551,7 +551,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHc-cG-tGo">
                                                 <rect key="frame" x="20" y="20" width="374" height="342"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 2" translatesAutoresizingMaskIntoConstraints="NO" id="Yho-B1-y2b">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FlashImage" translatesAutoresizingMaskIntoConstraints="NO" id="Yho-B1-y2b">
                                                         <rect key="frame" x="10" y="75" width="117" height="171"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="117" id="228-eA-hTv"/>
@@ -718,15 +718,15 @@
     </scenes>
     <resources>
         <image name="Fill 8" width="14" height="13"/>
+        <image name="FlashImage" width="66" height="99"/>
         <image name="Group 2-2" width="227" height="340"/>
         <image name="Main-1" width="359" height="569"/>
-        <image name="Rectangle 2" width="66" height="99"/>
+        <image name="Shape" width="28" height="33"/>
         <image name="fab" width="360" height="513"/>
         <image name="flagRU" width="512" height="512"/>
         <image name="flagUSA" width="512" height="512"/>
         <image name="radio off" width="24" height="24"/>
         <image name="radio on" width="24" height="24"/>
-        <image name="sh" width="128" height="128"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

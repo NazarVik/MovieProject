@@ -24,7 +24,7 @@ class MoviesListViewController: UIViewController {
     
 }
     
-    extension MoviesListViewController: UITableViewDelegate, UITableViewDataSource {
+extension MoviesListViewController: UITableViewDelegate, UITableViewDataSource {
         
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return moviesModelArray.item.count
@@ -34,19 +34,18 @@ class MoviesListViewController: UIViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! MovieTableViewCell
 //            cell.backView.layer.cornerRadius = 10
             cell.configure(by: moviesModelArray.item[indexPath.item])
-           
             return cell
         }
+        
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
             return 150
         }
+        
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            print("discription")
             let vc = storyboard?.instantiateViewController(withIdentifier: "discription")
             self.navigationController?.pushViewController(vc!, animated: true)
-           
         }
         
-    }
+}
 
 
