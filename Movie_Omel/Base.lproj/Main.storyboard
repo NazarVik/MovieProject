@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Start View Controller-->
+        <!--StartVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="StartViewController" customModule="Movie_Omel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" title="StartVC" id="BYZ-38-t0r" customClass="StartViewController" customModule="Movie_Omel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -249,7 +249,7 @@
                                         <subviews>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WAq-mC-8Is">
                                                 <rect key="frame" x="48" y="37.666666666666686" width="218" height="32"/>
-                                                <color key="backgroundColor" name="ColorForText"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="31" id="gBp-bk-XPC"/>
                                                 </constraints>
@@ -322,10 +322,10 @@
             </objects>
             <point key="canvasLocation" x="1624.6376811594205" y="759.78260869565224"/>
         </scene>
-        <!--Genre View Controller-->
+        <!--GenreVC-->
         <scene sceneID="tpT-ce-K0C">
             <objects>
-                <viewController id="NxK-xd-I8c" customClass="GenreViewController" customModule="Movie_Omel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="GenreVC" id="NxK-xd-I8c" customClass="GenreViewController" customModule="Movie_Omel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aHk-Lc-afB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -393,7 +393,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sk3-ix-Aw5">
-                        <barButtonItem key="backBarButtonItem" title=" " id="Kd4-RQ-U33"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="Hmt-Zk-HzT"/>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="lSo-I8-HMY" id="8c3-4n-axs"/>
@@ -403,10 +403,10 @@
             </objects>
             <point key="canvasLocation" x="2371.0144927536235" y="37.5"/>
         </scene>
-        <!--Movies List View Controller-->
+        <!--MovieVC-->
         <scene sceneID="ZAx-o5-sQ4">
             <objects>
-                <viewController id="BtP-pO-CbA" customClass="MoviesListViewController" customModule="Movie_Omel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MovieVC" id="BtP-pO-CbA" customClass="MoviesListViewController" customModule="Movie_Omel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uJ1-Kn-KwH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -534,10 +534,10 @@
             </objects>
             <point key="canvasLocation" x="3102.898550724638" y="37.5"/>
         </scene>
-        <!--Movie Discription View Controller-->
+        <!--DiscriptionVC-->
         <scene sceneID="Qh1-91-6EM">
             <objects>
-                <viewController storyboardIdentifier="discription" id="AzK-TT-Sc4" customClass="MovieDiscriptionViewController" customModule="Movie_Omel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="discription" title="DiscriptionVC" id="AzK-TT-Sc4" customClass="MovieDiscriptionViewController" customModule="Movie_Omel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TEy-OE-PhF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

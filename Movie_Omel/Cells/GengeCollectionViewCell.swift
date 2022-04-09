@@ -12,7 +12,7 @@ class GengeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var genreImageView: UIImageView!
     @IBOutlet weak var textLabel: UILabel!
     
-    func configure(by model: Genres){
+    func configure(by model: Genres) {
         textLabel.text = model.name.uppercased()
         genreImageView.image = UIImage(named: "Shape")
     }

@@ -7,15 +7,29 @@
 
 import Foundation
 
-struct MovisDiscriptionModel {
-    let id: Int
-    let posterPath: String
-    let title: String
-    let status: String
-    let tagline: String
-    let budget: Int
-    let voteAverage: Double
-    let genres: [Genres]
-    let overview: String
+struct MovieDiscriptionModel {
+    var id: Int
+    var posterPath: String
+    var title: String
+    var status: String
+    var tagline: String
+    var budget: Int
+    var voteAverage: Double
+    var genres: [Genres]
+    var overView: String
+}
+
+class MockMovieDiscriptionModel {
+    var mockMovieDiscriptionModel: MovieDiscriptionModel?
+    func configureMovieDiscriptionModel () -> MovieDiscriptionModel {
+        mockMovieDiscriptionModel!.posterPath = "FlashImage"
+        mockMovieDiscriptionModel!.title = "Flash"
+        mockMovieDiscriptionModel!.status = "no"
+        mockMovieDiscriptionModel!.tagline = "no"
+        mockMovieDiscriptionModel!.budget = 5
+        mockMovieDiscriptionModel!.voteAverage = 8.0
+        mockMovieDiscriptionModel!.overView = "no"
+        return mockMovieDiscriptionModel!
+    }
     
 }

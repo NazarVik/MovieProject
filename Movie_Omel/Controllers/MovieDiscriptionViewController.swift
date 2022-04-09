@@ -17,22 +17,18 @@ class MovieDiscriptionViewController: UIViewController {
     @IBOutlet weak var voteAverage: UILabel!
     @IBOutlet weak var overView: UILabel!
     
+    var initDiscriptionVC = MockMovieDiscriptionModel().configureMovieDiscriptionModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        posterPath.image = UIImage(named: initDiscriptionVC.posterPath)
+        titleDiscription.text = initDiscriptionVC.title
+        status.text = initDiscriptionVC.status
+        tagline.text = initDiscriptionVC.tagline
+        budget.text = "\(initDiscriptionVC.budget)"
+        voteAverage.text = "\(initDiscriptionVC.voteAverage)"
+        overView.text = initDiscriptionVC.overView
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+        
 }
+
