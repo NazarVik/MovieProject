@@ -14,6 +14,7 @@ class GenreViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Select Genre"
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
 

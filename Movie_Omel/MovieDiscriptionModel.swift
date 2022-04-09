@@ -20,16 +20,9 @@ struct MovieDiscriptionModel {
 }
 
 class MockMovieDiscriptionModel {
-    var mockMovieDiscriptionModel: MovieDiscriptionModel?
-    func configureMovieDiscriptionModel () -> MovieDiscriptionModel {
-        mockMovieDiscriptionModel!.posterPath = "FlashImage"
-        mockMovieDiscriptionModel!.title = "Flash"
-        mockMovieDiscriptionModel!.status = "no"
-        mockMovieDiscriptionModel!.tagline = "no"
-        mockMovieDiscriptionModel!.budget = 5
-        mockMovieDiscriptionModel!.voteAverage = 8.0
-        mockMovieDiscriptionModel!.overView = "no"
-        return mockMovieDiscriptionModel!
+    var mockMovieDiscriptionModel =  MovieDiscriptionModel(id: 0, posterPath: "FlashImage", title: "Flash", status: "relize", tagline: "asasgasgasfg", budget: 6, voteAverage: 9.0, genres: [], overView: "Hello Hello Hello Hello Hello Hello Hello Hello Hello")
+    func configureMovieDiscriptionModel () ->  MovieDiscriptionModel {
+        return mockMovieDiscriptionModel
     }
-    
+
 }

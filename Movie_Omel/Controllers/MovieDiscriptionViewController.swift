@@ -21,6 +21,7 @@ class MovieDiscriptionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Movie Info"
         posterPath.image = UIImage(named: initDiscriptionVC.posterPath)
         titleDiscription.text = initDiscriptionVC.title
         status.text = initDiscriptionVC.status
