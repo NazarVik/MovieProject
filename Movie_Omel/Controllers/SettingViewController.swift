@@ -9,20 +9,23 @@ import UIKit
 
 class SettingViewController: UIViewController {
 
+    @IBOutlet weak var control: UISegmentedControl!
+    @IBOutlet weak var englishView: UIView!
+    @IBOutlet weak var russianView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        setSettingView(englishView)
+        setSettingView(russianView)
+        setSettingView(control)
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setSettingView (_ someView:UIView) -> UIView {
+        someView.layer.borderWidth = 1
+        someView.layer.borderColor = UIColor(named: "ColorForText")?.cgColor
+        someView.layer.cornerRadius = 4
+        
+        return someView
     }
-    */
-
 }
