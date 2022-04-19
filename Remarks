@@ -34,3 +34,12 @@
 - В SettingViewController в Language Optional напротив языков должны быть UIButton, а не UIImageView
 
 - В SettingViewController в Rasolution Optional Segment Control не сответствует дизайну.
+
+
+19.04.2022
+- В SettingViewController функкции setSettingView(englishView) ожидают что возвращаемое значение будет обрабатываться. (Желтая ошибка)
+- На MovieDiscriptionViewController на картинке отсутствует белая тень.
+- на MoviesListViewController расстояние между originalTitle и overView не соответствует дизайну.
+- В названиях @IBOutlet weak var nameView вконце имени должно писаться наменование view (Например: status -> statusLabel, voteAverage -> voteAverageStackView)
+- Цвета control (UISegmentedControl) не соответствуют дизайну (рекомендую обратить внимание на setTitleTextAttributes) 
+- На экране SettingViewController компилятор ругается на констрейнты.
