@@ -10,6 +10,8 @@ import UIKit
 class MoviesListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    var ulrString = "https://api.themoviedb.org/3/list/{list_id}?api_key=<<api_key>>&language=en-US"
     let identifier = "TableCell"
     var moviesModelArray = MockMoviesModel().configureMovieModel()
     

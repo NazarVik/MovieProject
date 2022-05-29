@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="guU-Vb-SGD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="guU-Vb-SGD">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -121,10 +121,10 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sse-iP-4gU">
-                                                        <rect key="frame" x="259" y="10" width="22" height="22"/>
+                                                        <rect key="frame" x="237" y="10" width="44" height="44"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" priority="750" constant="22" id="Jwt-MR-CLG"/>
-                                                            <constraint firstAttribute="width" priority="750" constant="22" id="coS-jW-Cbh"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="44" id="coS-jW-Cbh"/>
                                                             <constraint firstAttribute="width" secondItem="Sse-iP-4gU" secondAttribute="height" multiplier="1:1" id="dqH-Eo-jKk"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
