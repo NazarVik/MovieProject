@@ -9,8 +9,13 @@ import UIKit
 
 class GengeCollectionViewCell: UICollectionViewCell {
    
-    @IBOutlet weak var imageCell: UIImageView!
+    @IBOutlet weak var genreImageView: UIImageView!
+    @IBOutlet weak var textLabel: UILabel!
     
+    func configure(by model: Genres) {
+        textLabel.text = model.name.uppercased()
+        genreImageView.image = UIImage(named: "Shape")
+    }
     
     
 //    imageCell.image = "comedy"
