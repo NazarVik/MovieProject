@@ -1,0 +1,36 @@
+02.04.2022
+- При запуске приложения выдает ошибку [Storyboard] Unknown class _TtC10Movie_Omel14ViewController in Interface Builder file. Следует обратить внимание на название в сториборде главного экрана. Он имеет ссылку на кастомный класс ViewController которого утебя в коде не существует (повезло что не крешнулось)!
+
+- При запуске второго контроллера class GenreViewController появляется ошибка Movie_Omel[28874:721009] Could not load the "sh" image referenced from a nib in the bundle with identifier "ru.swiftme.Movie-Omel"
+
+- Название проектов, классов и прочих важных штук не следует делать через нижнее подчеркивание Movie_Omel. Испрользовать CamelCase -> MovieOmel. Сследует переименовать проект: https://programmingwithswift.com/how-to-rename-an-xcode-project/
+
+- В расширениях GenreViewController функции должны иметь отступ слева в один таб.
+
+- После слова return скобка закрывается сразу на следующей строке, без дополнительногй пустой строки.
+
+- Между функциями должен быть отступ в одну строку MoviesListViewController строки 36, 39.
+
+- class MovieTableViewCell строки 39-46 функция и закрывающиеся скобки сдвинуты к левому краю.
+
+- class MoviesListViewController строки 23-24 следует удалить.
+
+- class GengeCollectionViewCell строки 19-22 стоит удалить.
+
+- class MoviesListViewController строки 12-15 не должно всё в перемешку идти. Как правило, сначала объявляется класс потом все IBOutlet после них все переменные и константы, далее инициализация класса либо override func viewDidLoad().
+
+- На всех эеранах отсутствует title c названием экрана.
+
+- В названиях @IBOutlet например @IBOutlet weak var originalTitle последним словом пишется тип элемента. originalTitle следует переименовать на originalTitleLabel
+
+- struct MovieItemModel константу overview следует переименовать в overView
+
+- GenreViewController ячейки не соответствуют дизайну.
+
+- в NavigtionBar кнопка < Back должна быть белого цвета
+
+- В GenreViewController, MovieDiscriptionViewController и SettingViewController NavigtionBar белого цвета так же снизу полоса белого цвета.
+
+- В SettingViewController в Language Optional напротив языков должны быть UIButton, а не UIImageView
+
+- В SettingViewController в Rasolution Optional Segment Control не сответствует дизайну.
