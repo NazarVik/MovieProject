@@ -19,13 +19,11 @@ class SettingViewController: UIViewController {
         setSettingView(englishView)
         setSettingView(russianView)
         setSettingView(control)
-        
+
     }
-    func setSettingView (_ someView:UIView) -> UIView {
+    func setSettingView (_ someView:UIView) {
         someView.layer.borderWidth = 1
         someView.layer.borderColor = UIColor(named: "ColorForText")?.cgColor
         someView.layer.cornerRadius = 4
-        
-        return someView
     }
 }

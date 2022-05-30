@@ -14,17 +14,22 @@ class GenreViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     let urlString = "https://api.themoviedb.org/3/genre/movie/list?api_key=9dcb2fc7f9c7799a5d892a673fa4d40c&language=en-US"
     var networkDataGenres = NetworkDataGenres()
-    var genresArray: GenreModel = GenreModel(genres: [])
+    var genresArray: GenreModel? {
+        didSet {
+            collectionView.reloadData()
+        }
+    }//= GenreModel(genres: [])
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Select Genre"
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
+        print("hello")
         self.networkDataGenres.fetcherData(urlString: urlString) { GenreModel in
             guard let genreModel = GenreModel else { return }
             self.genresArray = genreModel
-
+//            self.collectionView.reloadData()
         }
     }
 }
@@ -32,13 +37,13 @@ class GenreViewController: UIViewController {
 extension GenreViewController: UICollectionViewDataSource, UICollectionViewDelegate {
 
     func collectionView(_ collectiomView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return genresArray.genres.count
+        return genresArray?.genres.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! GengeCollectionViewCell
-        
-        cell.configure(by: genresArray.genres[indexPath.item])
+        guard let genre = genresArray?.genres[indexPath.item] else { return UICollectionViewCell() }
+        cell.configure(by: genre)
         return cell
     }
 }
